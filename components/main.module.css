@@ -26,8 +26,8 @@
   height: 2.813rem;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   padding: 0;
   box-sizing: border-box;
 }
@@ -54,8 +54,8 @@
   width: 21.569rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   padding: 0 var(--padding-188xl) 0 0;
   box-sizing: border-box;
   max-width: 100%;
@@ -79,7 +79,7 @@
 .navigationProducts {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: start;
   justify-content: flex-end;
   padding: 0 var(--padding-6xs) 0 var(--padding-4xs);
 }
@@ -121,13 +121,13 @@
 .navigationMenu {
   align-self: stretch;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: start;
   gap: var(--gap-7xs-7);
 }
 
 .heroNavigation {
   width: 3.938rem;
-  align-items: flex-start;
+  align-items: start;
   justify-content: center;
   padding: 18px 0 var(--padding-xs);
   box-sizing: border-box;
@@ -167,8 +167,8 @@
 .solutionDeveloperLabels {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   padding: 0 var(--padding-7xs) 0 0;
 }
 
@@ -191,8 +191,8 @@
 .solutionDeveloperLabels1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   padding: 0 var(--padding-7xs) 0 0;
 }
 
@@ -227,7 +227,7 @@
 .solutionDevelopers {
   margin: 0;
   display: flex;
-  align-items: flex-start;
+  align-items: start;
   max-width: 100%;
 }
 
@@ -266,8 +266,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   padding: var(--padding-8xs-8) 0 0;
 }
 
@@ -306,8 +306,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   padding: var(--padding-11xs-8) var(--padding-12xs) var(--padding-11xs-9) var(--padding-mini);
   gap: var(--gap-8xs-9);
   z-index: 1;
@@ -318,7 +318,7 @@
   width: 8.225rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-3xs-3);
   box-sizing: border-box;
@@ -355,8 +355,8 @@
 
 .main {
   align-self: stretch;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   /* padding: 0 0 var(--padding-70xl); */
 }
 
@@ -418,7 +418,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: start;
     padding: 0 0;
   }
 
