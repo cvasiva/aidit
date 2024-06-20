@@ -1,4 +1,4 @@
 module.exports = {
   // other Next.js configuration options
-  output: 'export',
+  output: 'next export',
 }
