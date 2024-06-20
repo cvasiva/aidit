@@ -8,11 +8,9 @@ import Link from "next/link";
 export type MainType = {
   className?: string;
 };
-
 const Main: NextPage<MainType> = ({ className = "" }) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [colorChange, setColorChange] = useState<boolean>(false);
-
   const changeNavbarColor = (): void => {
     if (window.scrollY >= 80) {
       setColorChange(true);
@@ -20,17 +18,13 @@ const Main: NextPage<MainType> = ({ className = "" }) => {
       setColorChange(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener('scroll', changeNavbarColor);
     return () => {
       window.removeEventListener('scroll', changeNavbarColor);
     };
   }, []);
-
   const pathname = usePathname()
-
-
   return (
     <>
       <section className={[styles.main, className].join(" ")}>
@@ -43,7 +37,6 @@ const Main: NextPage<MainType> = ({ className = "" }) => {
               </div>
               <a className={styles.taglineChange}>TAGLINE CHANGE</a>
             </div>
-
             <div className={styles.heroNavigation}>
               <Link href="/" className={pathname === '/' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
                 <div className={styles.navigationMenu}>
@@ -54,25 +47,24 @@ const Main: NextPage<MainType> = ({ className = "" }) => {
                 </div>
               </Link>
             </div>
-
             <nav className={styles.developerResources}>
               <nav className={styles.solutionDevelopers}>
-                <Link href="/" className={pathname === '/about' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
+                <Link href="/" className={pathname === '/' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
                   <div className={styles.solutionDeveloperLabels}>
                     <a className={styles.itemButton1}>About</a>
                   </div>
                 </Link>
-                <Link href="/" className={pathname === '/services' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
+                <Link href="/" className={pathname === '/' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
                   <div className={styles.solutionDeveloperLabels1}>
                     <a className={styles.itemButton2}>Services</a>
                   </div>
                 </Link>
-                <Link href="/" className={pathname === '/resources' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
+                <Link href="/" className={pathname === '/' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
                   <div className={styles.solutionDeveloperLabels1}>
                     <a className={styles.itemButton3}>Resources</a>
                   </div>
                 </Link>
-                <Link href="/" className={pathname === '/learn' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
+                <Link href="/" className={pathname === '/' ? `${styles.linkstyle}` : `${styles.linkstyleactive}`}>
                   <div className={styles.solutionDeveloperLabels1}>
                     <a className={styles.itemButton3}>Learn</a>
                   </div>
@@ -97,7 +89,6 @@ const Main: NextPage<MainType> = ({ className = "" }) => {
             </div>
           </header>
         </div>
-
       </section>
       <div className={styles.dnonenav}>
         <div className={colorChange ? `${styles.rectangleParent}` : `${styles.rectangleParent}`}>
@@ -191,10 +182,8 @@ const Main: NextPage<MainType> = ({ className = "" }) => {
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
-
                 </div>
               </>
             )}
@@ -202,8 +191,6 @@ const Main: NextPage<MainType> = ({ className = "" }) => {
         </div>
       </div>
     </>
-
   );
 };
-
 export default Main;

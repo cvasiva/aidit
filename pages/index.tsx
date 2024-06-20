@@ -14,33 +14,15 @@ import BusinessGrowth from "../components/business-growth";
 import DivcCPVDp1 from "../components/divc-c-p-v-dp1";
 import DivcCPVDp from "../components/divc-c-p-v-dp";
 import styles from "./index.module.css";
-
-
-
 const Home: NextPage = () => {
- 
   return (
     <div className={styles.home}>
       <Main />
-
-
       <FrameComponent2 />
-
-      
-
-      {/* <FrameComponent2 /> */}
       <FrameComponent1 />
-
       <Accomplishments />
       <EmergingServices />
       <Consultancy />
-      {/* <div className={styles.button}>
-        <div className={styles.bg} />
-        <b className={styles.services}>SERVICES</b>
-        <div className={styles.vectorWrapper}>
-          <img className={styles.vectorIcon} alt="" src="/vector-8.svg" />
-        </div>
-      </div> */}
       <ChooseUs />
       <div className={styles.homeInner} />
       <div className={styles.titleAndDescription} />
@@ -64,5 +46,4 @@ const Home: NextPage = () => {
     </div>
   );
 };
-
 export default Home;
