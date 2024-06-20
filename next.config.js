@@ -1,4 +1,6 @@
+// next.config.js
+
 module.exports = {
-  // other Next.js configuration options
-  output: 'next export',
-}
+  output: 'export',
+  // other configurations...
+};
